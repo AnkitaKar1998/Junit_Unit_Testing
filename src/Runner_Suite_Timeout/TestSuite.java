@@ -1,4 +1,4 @@
-package RunnerExercise;
+package Runner_Suite_Timeout;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -7,7 +7,8 @@ import org.junit.runners.Suite;
 
 @Suite.SuiteClasses({
         TestMessage.class,
-        TestMessage2.class
+        TestMessage2.class,
+        TestMessageForInfinite.class
 })
 
 public class TestSuite {

@@ -1,4 +1,4 @@
-package RunnerExercise;
+package Runner_Suite_Timeout;
 
 import org.junit.Assert;
 import org.junit.Test;

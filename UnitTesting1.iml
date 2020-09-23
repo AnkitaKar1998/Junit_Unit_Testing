@@ -25,5 +25,16 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Desktop/libraries/mockito-all-2.0.2-beta.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Desktop/libraries/mockito-all-2.0.2-beta.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

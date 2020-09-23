@@ -1,6 +1,5 @@
-package RunnerExercise;
+package Runner_Suite_Timeout;
 
-import junit.framework.TestCase;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;

@@ -1,4 +1,4 @@
-package RunnerExercise;
+package Runner_Suite_Timeout;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
@@ -12,5 +12,7 @@ public class SuiteRunner {
             System.out.println(failure.toString());
         }
         System.out.println(result.wasSuccessful());
+
+
     }
 }

@@ -1,10 +1,10 @@
-package RunnerExercise;
+package Runner_Suite_Timeout;
 
 public class Message {
 
     String msg;
 
-    Message(String msg) {
+    public Message(String msg) {
         this.msg = msg;
     }
 
@@ -14,5 +14,9 @@ public class Message {
 
     public String getMessageWithPrefix() {
         return "Hi "+msg;
+    }
+
+    public void waitInfinite() {
+//        while(true);
     }
 }

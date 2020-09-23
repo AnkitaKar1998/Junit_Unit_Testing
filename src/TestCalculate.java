@@ -2,50 +2,67 @@ import org.junit.*;
 
 public class TestCalculate {
 
+    // arrange
+    Calculate calci = new Calculate();
+    int a = -50;
+    int b = 10;
+
     @Test
-    public void testAdd() {
-        System.out.println("testAdd method");
-        //arrange
-        Calculate calci = new Calculate();
-        int a = 10;
-        int b = 20;
-        int expected = 30;
-        //act
+    public void testAddMethod() {
+        int expected = -40;
+        // act
         int actual = calci.add(a,b);
-        //assert
+        // assert
         Assert.assertEquals(expected, actual);
     }
 
     @Test
-    public void testSubtract() {
-        System.out.println("testSubtract method");
-        //arrange
-        Calculate calci = new Calculate();
-        int a = 55;
-        int b = 50;
-        int expected = 5;
-        //act
+    public void testSubtractMethod() {
+        int expected = -60;
+        // act
         int actual = calci.subtract(a,b);
-        //assert
+        // assert
         Assert.assertEquals(expected, actual);
     }
 
-    @Before
+    @Test
+    public void testMultiplyMethod() {
+        int expected = -500;
+        Assert.assertEquals(expected, calci.multiply(a,b));
+    }
+
+    @Test
+    public void testDivideMethodWorking() {
+        int expected = -5;
+        Assert.assertEquals(expected, calci.divide(a,b));
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDivideMethodException() {
+        int c = 50;
+        int d = 0;
+        calci.divide(c,d);
+    }
+
+
+
+
+    @Ignore
     public void runBeforeEveryClass() {
         System.out.println("Before every class");
     }
 
-    @After
+    @Ignore
     public void runAfterEveryClass() {
         System.out.println("After every class");
     }
 
-    @BeforeClass
+    @Ignore
     public  static void runBeforeClass() {
         System.out.println("Before Class");
     }
 
-    @AfterClass
+    @Ignore
     public  static void runAfterClass() {
         System.out.println("After Class");
     }
